@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+</head>
+<style>
+    #unmutePlayerButton {
+        font-size: 100px;
+    }
+</style>
+
+<body>
+  <video id="player" controls autoplay muted>
+    <source src="./Seoul.mp4" type="video/mp4" />
+    지원 가능한 영상이 없습니다.
+  </video>
+  <button id="unmutePlayerButton" onclick="unmute()">unmute</button>
+
+  <script>
+    function unmute() {
+      const player = document.getElementById("player");
+      player.muted = false;
+    }
+  </script>
+  <h3>크롬 정책상 버튼을 1회는 눌러야 음소거가 해제되게 구현이 가능한데 그 버튼을 크게<br>
+     만들어서 화면을 가려버리고 누를때 사라지게 하는 방법이 가능할껀데 제가 모르겠네요... </h3>
+</body>
+
+</html>
